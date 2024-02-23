@@ -12,7 +12,25 @@
 
 
 
-    //1ª Digitação (aqui) 
+    //1ª Digitação ___________________________________________________________________________________________________________________________ //
+
+    class Pessoa {
+      // Propriedade
+      nome = 'se nome';
+      genero = 'não informado';
+      idade ;
+
+      // Metodos
+      mostraGenero() {
+        exibirNaTela(this.genero);
+      }
+      mostraNome() {
+        exibirNaTela(this.nome);
+      }
+      mostraIdade() {
+        return this.idade >=18 ? 'é maior' : 'é menor';
+      }
+    }
 
 
 
@@ -37,9 +55,16 @@
 
 
 
-    //2ª Digitação (aqui) 
+    //2ª Digitação ___________________________________________________________________________________________________________________________ //
 
 
+    let umaPessoa = new Pessoa;
+
+    umaPessoa.nome = 'Checo Perez';
+    umaPessoa.genero = 'masculino';
+    umaPessoa.idade = 30;
+
+    exibirNaTela(umaPessoa);
 
 
     // Objeto herdando recursos
@@ -47,10 +72,14 @@
 
 
 
-     //3ª Digitação (aqui) 
+     //3ª Digitação ___________________________________________________________________________________________________________________________ //
+ 
+    let outraPessoa = new Pessoa;
+    
+    outraPessoa.nome = 'Maria';
+    outraPessoa.idade = 25;
 
-
-
+    exibirNaTela(outraPessoa);
 
     // Console.log(aluno)
     aluno.mostraDados();
