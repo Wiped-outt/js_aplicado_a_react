@@ -31,6 +31,16 @@
 
     //2ª Digitação (aqui) 
 
+    const dados = {
+      nome: 'Viviane',
+    };
+
+    const novosDados = {
+      ...dados,
+      cidades: 'São Pauo',
+      estados: 'SP',
+      idade: 25 //sobrescrever o valor somente da idade
+    }
 
 
     function exibirNaTela(texto) {
